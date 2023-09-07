@@ -1,0 +1,68 @@
+.banner {
+  background-color: #f8f4ed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.7em;
+  margin-top: -6em;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.about-the-event {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 2em;
+}
+table input {
+  width: 100px;
+}
+table {
+  width: 100vw;
+  text-align: center;
+}
+
+th,
+td {
+  border-bottom: 1px solid gray;
+  padding: 2em;
+}
+.quantity {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  padding: 7px 10px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  justify-content: space-between;
+  align-items: center;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  margin-right: 4em;
+  flex-direction: column;
+}
+.share-logo {
+  display: flex;
+  gap: 1.4em;
+  margin-top: 1em;
+}
+.share {
+  margin-left: 4em;
+  margin-bottom: 4em;
+}

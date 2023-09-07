@@ -1,0 +1,110 @@
+.sale {
+  width: 100vw;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fdc46f;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px;
+}
+.shop {
+  margin: 4em 10em;
+}
+.products {
+  margin-top: 4em;
+  display: flex;
+  gap: 2em;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.product-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.product-img {
+  background-image: url('https://static.wixstatic.com/media/7b0b76_1c44b3e8f9e24167a84b551e95389c67~mv2.jpg/v1/fill/w_423,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7b0b76_1c44b3e8f9e24167a84b551e95389c67~mv2.jpg');
+  width: 282px;
+  height: 282px;
+  position: relative;
+}
+.product-img:not(#not_product):hover {
+  background-image: var(--hover-img);
+}
+.quick-view {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 0px;
+  background: black;
+  color: white;
+  opacity: 0;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+.product-img:hover .quick-view {
+  opacity: 1;
+  transition-duration: 0.3s;
+  height: 40px;
+}
+.tag {
+  padding: 0.3em 1em;
+  background: black;
+  position: absolute;
+  z-index: 4;
+  color: white;
+}
+.add-to-cart {
+  display: flex;
+  padding: 1em 7em;
+  width: fit-content;
+  background: white;
+  height: 100vh;
+  justify-content: center;
+  gap: 4em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.wrapper-fade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #808080;
+  opacity: 0.7;
+  z-index: 100;
+  display: none;
+}
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.cart-info form select {
+  padding: 1em;
+  font-size: 0.9em;
+  margin-top: 10px;
+  border: 1px solid gray;
+  padding-left: 10px;
+  width: 100%;
+}

@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline-color: blue;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24vh;
+  background: black;
+  justify-content: center;
+  color: white;
+  gap: 1em;
+  position: fixed;
+  width: 100vw;
+  z-index: 4;
+  top: 0;
+  padding-bottom: 1.7em;
+}
+
+.login {
+  display: inline-flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+header div:first-child {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.features {
+  display: flex;
+  height: 100%;
+  gap: 5em;
+  padding-top: 1.5em;
+}
+.right-features {
+  display: flex;
+  gap: 4em;
+}
+
+header select {
+  width: 100px;
+  height: 40px;
+  margin-right: 2em;
+  font-weight: lighter;
+  outline: none;
+}
+
+nav {
+  display: flex;
+  gap: 4em;
+  margin-bottom: 1em;
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+nav a:hover {
+  color: #fdc46f;
+}
+header svg {
+  filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(116deg)
+    brightness(99%) contrast(102%);
+}
+span:hover {
+  color: gray;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+#flowers {
+  transform: rotateZ(140deg);
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  width: 79%;
+  margin-bottom: 10em;
+}
+.content-item p {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 1em;
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+.btn-item {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+.btn-item button,
+.product button,
+.add-to-cart button,
+.banner button,
+button,
+#all_products {
+  min-width: 100px;
+  height: 3em;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  border-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-width: 0px;
+  font: normal normal normal 1em georgia, palatino, 'book antiqua',
+    'palatino linotype', serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+main {
+  margin-top: 24vh;
+}
+#good_img {
+  width: 100vw;
+  height: 700px;
+  background-image: url('https://static.wixstatic.com/media/7b0b76_8455c59146f64973a34570f3b8f62963~mv2.jpg/v1/fill/w_1013,h_709,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/7b0b76_8455c59146f64973a34570f3b8f62963~mv2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  position: relative;
+}
+#inside_good_img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  right: 10em;
+  top: 7em;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+footer {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+footer nav {
+  padding-top: 2em;
+  justify-content: center;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+footer input {
+  background: white;
+  height: 50px;
+  border: none;
+  width: 250px;
+  outline: none;
+  font-weight: bold;
+  padding-left: 2em;
+}
+.else {
+  margin-top: 4em;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+.box {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  background: black;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid rgba(70, 69, 69, 0.508);
+  border-radius: 5px;
+}

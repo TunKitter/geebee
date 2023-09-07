@@ -1,0 +1,39 @@
+.cart table {
+  width: fit-content;
+}
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+}
+.products {
+  gap: 7px;
+  flex-wrap: nowrap;
+  transition-duration: 0.4s;
+  width: 100vw;
+  margin: 0 auto;
+  /* overflow-x: scroll; */
+  position: relative;
+  /* background: red; */
+  /* justify-content: center; */
+}
+.slideshow {
+  position: relative;
+  width: 100vw;
+}
+.next,
+.prev {
+  height: 100%;
+  color: black;
+  position: absolute;
+  top: 30%;
+  z-index: 99999;
+  user-select: none;
+}
+.prev {
+  left: 2em;
+}
+.next {
+  right: 2em;
+}
