@@ -11,14 +11,34 @@
 <body>
     <header>
         <div class="features">
-            <img src="https://static.wixstatic.com/media/71aacd_b020b8b6dc2044cfaa172cfdce41c4f7~mv2.png/v1/fill/w_245,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gees-Bees-logo-white1.png"
-                alt="">
+            <div class="left-features">
+                <div class="tab"><svg onclick="document.querySelector('.side-bar').style.display = 'block'"
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                        </g>
+                        <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(9.84615,9.84615)">
+                                <path d="M0,4v2h26v-2zM0,12v2h26v-2zM0,20v2h26v-2z"></path>
+                            </g>
+                        </g>
+                    </svg> </div>
+                <img src="https://static.wixstatic.com/media/71aacd_b020b8b6dc2044cfaa172cfdce41c4f7~mv2.png/v1/fill/w_245,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gees-Bees-logo-white1.png"
+                    alt="">
+
+            </div>
             <div class="right-features">
+
                 <span class="login">
-                    <select name="lang">
+                    <select name="lang" class="lang_no_responsive">
                         <option value="en">EN</option>
                         <option value="vn" selected>VN</option>
-
                     </select>
                     <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="32"
                         height="50" viewBox="0 0 50 50">
@@ -51,12 +71,46 @@
             <a href="#">Our Honey</a>
             <a href="#">About us</a>
         </nav>
+        <div class="side-bar">
+            <div>
+                <span onclick="document.querySelector('.side-bar').style.display = 'none'">X</span>
+                <select name="lang">
+                    <option value="vn">Vietnam</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div>
+                <ul
+                    style="display: flex;flex-direction:  column; gap: 1em; margin-left: 1em; font-size: 1.3em;margin-top: 3em;">
+                    <li>Home</li>
+                    <li>Shop online <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" width="10px"
+                            onclick="open_nav('shop_nav')">
+                        <ul style="margin-left: 1em;" id="shop_nav">
+                            <li style="margin-top: 1em;">Easter</li>
+                            <li style="margin-top: 1em;">Teacher Gifts</li>
+                        </ul>
+                    </li>
+                    <li>Honey & Apple Days</li>
+                    <li>Where to Buy</li>
+                    <li>Our Honey <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" width="10px"
+                            onclick="open_nav('our_honey')">
+                        <ul style="margin-left: 1em;" id="our_honey">
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                        </ul>
+                    </li>
+                    <li>About us</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <img src="https://static.wixstatic.com/media/71aacd_e38a5947f116460b9ca862f511e93cc7~mv2.jpg/v1/fill/w_1470,h_693,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/71aacd_e38a5947f116460b9ca862f511e93cc7~mv2.jpg"
             alt="Canada-Ontario-Wildflower-Honey-Kitchen.jpg"
             style="width: 100%; height: 462px; object-fit: cover; object-position: 50% 100%;" width="100%" height="462"
-            fetchpriority="high">
+            fetchpriority="high" id="banner_img">
         <div id="title">
             <h1 style="font-size: 3em;"><b>100% Pure Canadian Honey </b></h1>
             <p style="font-size: 1.8em;">The <b>flavor</b> comes from <b>the flowers</b></p>
@@ -74,7 +128,7 @@
                 alt="Bees%2520flying%2520to%2520to%2520the%25" style="width:124px;height:135px;object-fit:cover"
                 width="124px" height="135"
                 srcset="https://static.wixstatic.com/media/71aacd_6d32c30c3d634a818f352ab7bdf50a66~mv2.jpg/v1/fill/w_186,h_203,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Bees%252520flying%252520to%252520to%252520the%2525.jpg"
-                fetchpriority="high">
+                fetchpriority="high" id="bee">
         </div>
         <div class="item">
             <img src="https://static.wixstatic.com/media/7b0b76_471cf26b64c14fc39d45c312f35ef560~mv2.jpg/v1/fill/w_627,h_627,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Ontario%20Wildflower%20Honey%20500g_edited.jpg"
@@ -83,7 +137,6 @@
                 srcset="https://static.wixstatic.com/media/7b0b76_471cf26b64c14fc39d45c312f35ef560~mv2.jpg/v1/fill/w_627,h_627,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Ontario%20Wildflower%20Honey%20500g_edited.jpg"
                 fetchpriority="high">
             <div class="content-item">
-
                 <h1>Wildflower Honey</h1>
                 <p>Honeybees pollinate <b>2 million wildflowers</b> to make each jar
                     of our pure Canadian wildflower honey.</p>
@@ -171,7 +224,8 @@
         <br><br><br>
         <div id="good_img">
             <div id="inside_good_img">
-                <h1 style="color: white; font-weight: bold; color: white; font-size: 2.7em;">Now Available <br>at your
+                <h1 style="color: white; font-weight: bold; color: white; font-size: 2.7em;">Now Available <br
+                        class="br">at your
                     Local
                 </h1>
                 <img src="https://static.wixstatic.com/media/7b0b76_b7f93ccdbb4c486783c690086de4e61b~mv2.jpg/v1/fill/w_449,h_83,al_c,lg_1,q_80,enc_auto/Loblaws%20Greenbank_edited.jpg"
@@ -208,14 +262,14 @@
         <img src="https://static.wixstatic.com/media/71aacd_31e6b62a288845dd838db57a1208e65a~mv2.png/v1/crop/x_0,y_0,w_1200,h_600/fill/w_1200,h_599,al_c,q_90,enc_auto/Best%20Ontario%20Wildflower%20Honey%20with%20Honey.png"
             alt="Best Ontario Wildflower Honey and honeycomb"
             style="width: 1017px; height: 508px; object-fit: cover; object-position: 50% 50%; float: right;margin-top: -14em; position: relative;z-index: 3;"
-            width="1017" height="508" fetchpriority="high">
+            width="1017" height="508" fetchpriority="high" id="almost_final">
         <br><br><br><br>
         <img src="https://static.wixstatic.com/media/71aacd_1a2212de915e4639a1c9adcf78507a4d~mv2.png/v1/fill/w_685,h_219,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202021-03-09%20at%209_46_33%20AM.png"
             alt="Screen Shot 2021-03-09 at 9.46.33 AM.png"
-            style="width: 488px; height: 156px; object-fit: cover; object-position: 50% 50%; display: block;margin: 0 auto;"
-            width="488" height="156" fetchpriority="high">
+            style="width: 488px; height: 156px;  display: block;margin: 0 auto;" width="488" height="156"
+            fetchpriority="high" id="above_feature_by">
         <h2 style="text-align: center;">Feature by</h2>
-        <div style="display: flex; gap: 2em; justify-content: center; margin-top: 2em;">
+        <div style="display: flex; gap: 2em; justify-content: center; margin-top: 2em;" class="feature_by">
             <img src="https://static.wixstatic.com/media/71aacd_0ebbcddc5d034e4097ad62c299a2fa71~mv2.jpg/v1/fill/w_287,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/porter_review_Logo2017_860x250-1-1.jpg"
                 alt="porter_review_Logo2017_860x250-1-1.jpg"
                 style="width: 191px; height: 55px; object-fit: cover; object-position: 50% 50%;" width="191" height="55"
@@ -236,67 +290,77 @@
                 width="138" height="66" fetchpriority="high">
         </div>
         <div class="rate" style="display: flex; align-items: center; gap: 2em; justify-content: center;">
-            <img src="https://static.wixstatic.com/media/7b0b76_861da7f0c63f4d6cb37dace697b962fa~mv2.jpg/v1/fill/w_378,h_699,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7b0b76_861da7f0c63f4d6cb37dace697b962fa~mv2.jpg"
-                alt="Loblaws Video - 1200 x 1200 (1)_edited.jpg"
-                style="height: 466px; object-fit: cover; object-position: 50% 50%;" height="466" fetchpriority="high">
-            <div data-mesh-id="comp-kpwhok3ainlineContent-gridContainer" data-testid="mesh-container-content"
-                style="max-width: 300px;">
-                <div id="comp-kpwhok3c1" class="KcpHeO tz5f0K comp-kpwhok3c1 wixui-rich-text"
-                    data-testid="richTextElement">
-                    <p class="font_8 wixui-rich-text__text"
-                        style="font-size:22px; line-height:1.5em; text-align:center;"><span
-                            style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                class="color_25 wixui-rich-text__text"><span style="font-size:22px;"
-                                    class="wixui-rich-text__text"><span style="font-style:italic;"
-                                        class="wixui-rich-text__text"><span
-                                            style="font-family:libre baskerville,serif; font-size: 1.3em;"
-                                            class="wixui-rich-text__text">Simply delicious with distinctly different
-                                            flavours and noticeably higher quality than the common store bought
-                                            brands.</span></span></span></span></span></p>
-                </div>
-                <div id="comp-kpwhok3f" class="BaOVQ8 tz5f0K comp-kpwhok3f wixui-rich-text"
-                    data-testid="richTextElement">
-                    <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:22px;"><span
-                            style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text">— Mohammed
-                            S.</span></p>
+            <div class="haha">
+                <img src="https://static.wixstatic.com/media/7b0b76_861da7f0c63f4d6cb37dace697b962fa~mv2.jpg/v1/fill/w_378,h_699,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7b0b76_861da7f0c63f4d6cb37dace697b962fa~mv2.jpg"
+                    alt="Loblaws Video - 1200 x 1200 (1)_edited.jpg"
+                    style="height: 466px; object-fit: cover; object-position: 50% 50%;" height="466"
+                    fetchpriority="high">
+                <div data-mesh-id="comp-kpwhok3ainlineContent-gridContainer" data-testid="mesh-container-content"
+                    style="max-width: 300px;">
+                    <div id="comp-kpwhok3c1" class="KcpHeO tz5f0K comp-kpwhok3c1 wixui-rich-text"
+                        data-testid="richTextElement">
+                        <p class="font_8 wixui-rich-text__text"
+                            style="font-size:22px; line-height:1.5em; text-align:center;"><span
+                                style="letter-spacing:normal;" class="wixui-rich-text__text"><span
+                                    class="color_25 wixui-rich-text__text"><span style="font-size:22px;"
+                                        class="wixui-rich-text__text"><span style="font-style:italic;"
+                                            class="wixui-rich-text__text"><span
+                                                style="font-family:libre baskerville,serif; font-size: 1.3em;"
+                                                class="wixui-rich-text__text">Simply delicious with distinctly different
+                                                flavours and noticeably higher quality than the common store bought
+                                                brands.</span></span></span></span></span></p>
+                    </div>
+                    <div id="comp-kpwhok3f" class="BaOVQ8 tz5f0K comp-kpwhok3f wixui-rich-text"
+                        data-testid="richTextElement">
+                        <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:22px;"><span
+                                style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text">—
+                                Mohammed
+                                S.</span></p>
 
-                    <p class="font_8 wixui-rich-text__text" style="font-size:16px; text-align:right;"><span
-                            style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text"><span
-                                style="font-size:16px;" class="wixui-rich-text__text">Google Review</span></span></p>
+                        <p class="font_8 wixui-rich-text__text" style="font-size:16px; text-align:right;"><span
+                                style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text"><span
+                                    style="font-size:16px;" class="wixui-rich-text__text">Google Review</span></span>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="haha">
 
-            <img src="https://static.wixstatic.com/media/7b0b76_6f4653333af247ce84af52068c276e52~mv2.jpg/v1/fill/w_378,h_699,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7b0b76_6f4653333af247ce84af52068c276e52~mv2.jpg"
-                alt="Loblaws Video - 1200 x 1200.jpg"
-                style="width: 252px; height: 466px; object-fit: cover; object-position: 50% 50%;" width="245"
-                height="466" fetchpriority="high">
+                <img src="https://static.wixstatic.com/media/7b0b76_6f4653333af247ce84af52068c276e52~mv2.jpg/v1/fill/w_378,h_699,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7b0b76_6f4653333af247ce84af52068c276e52~mv2.jpg"
+                    alt="Loblaws Video - 1200 x 1200.jpg"
+                    style="width: 252px; height: 466px; object-fit: cover; object-position: 50% 50%;" width="245"
+                    height="466" fetchpriority="high">
 
-            <div data-mesh-id="comp-kpwhok3kinlineContent-gridContainer" data-testid="mesh-container-content"
-                style="max-width: 300px;">
-                <div id="comp-kpwhok3n" class="BaOVQ8 tz5f0K comp-kpwhok3n wixui-rich-text"
-                    data-testid="richTextElement">
-                    <p class="font_8 wixui-rich-text__text"
-                        style="font-size:22px; line-height:1.5em; text-align:center;"><span
-                            class="color_15 wixui-rich-text__text"><span style="font-size:22px;"
-                                class="wixui-rich-text__text"><span style="font-style:italic;"
-                                    class="wixui-rich-text__text"><span style="font-family:libre baskerville,serif;"
-                                        class="wixui-rich-text__text">“By far the best honey we have ever had. I love it
-                                        in my tea and my kids love it on toast. I'm never getting honey anywhere but
-                                        here.”</span></span></span></span></p>
+                <div data-mesh-id="comp-kpwhok3kinlineContent-gridContainer" data-testid="mesh-container-content"
+                    style="max-width: 300px;">
+                    <div id="comp-kpwhok3n" class="BaOVQ8 tz5f0K comp-kpwhok3n wixui-rich-text"
+                        data-testid="richTextElement">
+                        <p class="font_8 wixui-rich-text__text"
+                            style="font-size:22px; line-height:1.5em; text-align:center;"><span
+                                class="color_15 wixui-rich-text__text"><span style="font-size:22px;"
+                                    class="wixui-rich-text__text"><span style="font-style:italic;"
+                                        class="wixui-rich-text__text"><span style="font-family:libre baskerville,serif;"
+                                            class="wixui-rich-text__text">“By far the best honey we have ever had. I
+                                            love it
+                                            in my tea and my kids love it on toast. I'm never getting honey anywhere but
+                                            here.”</span></span></span></span></p>
+                    </div>
+                    <div id="comp-kpwhok3r" class="BaOVQ8 tz5f0K comp-kpwhok3r wixui-rich-text"
+                        data-testid="richTextElement">
+                        <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:22px;"><span
+                                class="color_14 wixui-rich-text__text"><span
+                                    style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text">—
+                                    Crystal P.</span></span></p>
+
+                        <p class="font_8 wixui-rich-text__text" style="font-size:16px; text-align:right;"><span
+                                class="color_14 wixui-rich-text__text"><span
+                                    style="font-family:futura-lt-w01-light,sans-serif;"
+                                    class="wixui-rich-text__text"><span style="font-size:16px;"
+                                        class="wixui-rich-text__text">Facebook
+                                        Review</span></span></span></p>
+                    </div>
                 </div>
-                <div id="comp-kpwhok3r" class="BaOVQ8 tz5f0K comp-kpwhok3r wixui-rich-text"
-                    data-testid="richTextElement">
-                    <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:22px;"><span
-                            class="color_14 wixui-rich-text__text"><span
-                                style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text">—
-                                Crystal P.</span></span></p>
 
-                    <p class="font_8 wixui-rich-text__text" style="font-size:16px; text-align:right;"><span
-                            class="color_14 wixui-rich-text__text"><span
-                                style="font-family:futura-lt-w01-light,sans-serif;" class="wixui-rich-text__text"><span
-                                    style="font-size:16px;" class="wixui-rich-text__text">Facebook
-                                    Review</span></span></span></p>
-                </div>
             </div>
         </div>
     </main>
@@ -323,7 +387,7 @@
             Newsletter and Save
             10% (Check Email
             for Coupon Code)</div>
-        <form style="display: flex; justify-content: center; gap: 1em;margin-top: 2em;">
+        <form style="display: flex; justify-content: center; gap: 1em;margin-top: 2em;" id="footer_form">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email" style="width: 500px;">
             <button
@@ -343,6 +407,29 @@
             </div>
             <p>© 2023 Gees Bees Honey Company. All Rights Reserved</p>
         </div>
+
+        <!-- <div class="contact-me">
+            <div class="item-contact">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6nYfbIxX5A27bT0WEXmrpIGAMRVDtJ4l4bUOjZrwWgA&s"
+                    width="20px" alt="">
+                <div>Phone</div>
+            </div>
+            <div class="item-contact">
+                <img src="data:image/png;base64,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"
+                    width="20px">
+                <div>Email</div>
+            </div>
+            <div class="item-contact">
+                <img src="data:image/png;base64,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"
+                    width="20px">
+                <div>Facebook</div>
+            </div>
+            <div class="item-contact">
+                <img src="data:image/png;base64,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"
+                    width="40px">
+                <div>Chat</div>
+            </div>
+        </div> -->
     </footer>
     <div class="box">
 
@@ -354,6 +441,11 @@
         </svg>
         <span>How can we help you today</span>
     </div>
+    <script>
+        function open_nav(id) {
+            document.getElementById(id).style.display = document.getElementById(id).style.display == 'block' ? 'none' : 'block'
+        }
+    </script>
 </body>
 
 </html>
