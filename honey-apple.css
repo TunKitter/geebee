@@ -66,3 +66,33 @@ td {
   margin-left: 4em;
   margin-bottom: 4em;
 }
+@media screen and (max-width: 700px) {
+  #banner_title {
+    font-size: 2em !important;
+  }
+  #banner_img_first {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: 0% 0%;
+    margin-top: 0 !important;
+    margin-left: 0% !important;
+  }
+  .time {
+    margin-left: 1em;
+  }
+  .book_time {
+    flex-direction: column;
+  }
+  thead {
+    display: none;
+  }
+  table tbody {
+    display: flex;
+    flex-direction: column;
+  }
+  table tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+}

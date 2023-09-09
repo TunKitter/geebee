@@ -12,14 +12,34 @@
 <body>
     <header>
         <div class="features">
-            <img src="https://static.wixstatic.com/media/71aacd_b020b8b6dc2044cfaa172cfdce41c4f7~mv2.png/v1/fill/w_245,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gees-Bees-logo-white1.png"
-                alt="">
+            <div class="left-features">
+                <div class="tab"><svg onclick="document.querySelector('.side-bar').style.display = 'block'"
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                        </g>
+                        <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(9.84615,9.84615)">
+                                <path d="M0,4v2h26v-2zM0,12v2h26v-2zM0,20v2h26v-2z"></path>
+                            </g>
+                        </g>
+                    </svg> </div>
+                <img src="https://static.wixstatic.com/media/71aacd_b020b8b6dc2044cfaa172cfdce41c4f7~mv2.png/v1/fill/w_245,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gees-Bees-logo-white1.png"
+                    alt="">
+
+            </div>
             <div class="right-features">
+
                 <span class="login">
-                    <select name="lang">
+                    <select name="lang" class="lang_no_responsive">
                         <option value="en">EN</option>
                         <option value="vn" selected>VN</option>
-
                     </select>
                     <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="32"
                         height="50" viewBox="0 0 50 50">
@@ -52,11 +72,45 @@
             <a href="#">Our Honey</a>
             <a href="#">About us</a>
         </nav>
+        <div class="side-bar">
+            <div>
+                <span onclick="document.querySelector('.side-bar').style.display = 'none'">X</span>
+                <select name="lang">
+                    <option value="vn">Vietnam</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div>
+                <ul
+                    style="display: flex;flex-direction:  column; gap: 1em; margin-left: 1em; font-size: 1.3em;margin-top: 3em;">
+                    <li>Home</li>
+                    <li>Shop online <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" width="10px"
+                            onclick="open_nav('shop_nav')">
+                        <ul style="margin-left: 1em;" id="shop_nav">
+                            <li style="margin-top: 1em;">Easter</li>
+                            <li style="margin-top: 1em;">Teacher Gifts</li>
+                        </ul>
+                    </li>
+                    <li>Honey & Apple Days</li>
+                    <li>Where to Buy</li>
+                    <li>Our Honey <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" width="10px"
+                            onclick="open_nav('our_honey')">
+                        <ul style="margin-left: 1em;" id="our_honey">
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                            <li style="margin-top: 1em;">Wildflower Honey</li>
+                        </ul>
+                    </li>
+                    <li>About us</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <div class="banner">
             <p>Sat, Sep 09 | Ottawa</p>
-            <h2 style="font-size: 4em;">Honey & Apple Days</h2>
+            <h2 style="font-size: 4em;" id="banner_title">Honey & Apple Days</h2>
             <p style="max-width: 50%;">Discover the buzz and sweetness of fall at Gees Bees Honey Company Farm's Honey &
                 Apple Days—where you
                 can learn the art of honey-making and pick apples fresh from the orchard!
@@ -66,12 +120,12 @@
         <img src="https://static.wixstatic.com/media/7b0b76_cbd1dc738c22425bae15349a9f508359~mv2.png/v1/fill/w_1469,h_828,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/7b0b76_cbd1dc738c22425bae15349a9f508359~mv2.png"
             alt="Honey &amp; Apple Days"
             style="width: 979px; height: 552px; object-fit: cover; object-position: 50% 50%; margin-top: -3em; margin-left:10%;"
-            width="979" height="552" fetchpriority="high">
+            width="979" height="552" fetchpriority="high" id="banner_img_first">
         <div class="time">
             <h3 style="font-size: 2.1em;">Time & Location</h3>
             <p>9 more dates</p>
             <p>Sep 09, 11:00 a.m - 11:30 a.m</p>
-            <div style="display: flex; gap: 10em; align-items: center;">
+            <div style="display: flex; gap: 10em; align-items: center;" class="book_time">
                 <p>Ottawa, 538 River Rd, Gloucester, ON K1V 1E9, Canada</p>
                 <button
                     style="border: 1px solid #d1b386; background: white;color: #d1b386; width: fit-content; padding: 0 1em">Select
